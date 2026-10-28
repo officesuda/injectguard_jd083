@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "officesuda-injectguard_jd083"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别提示注入防护工程师·重排模型的候选截断上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "officesuda" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://officesuda.github.io"
+Repository = "https://github.com/officesuda/injectguard_jd083"
+Issues = "https://github.com/officesuda/injectguard_jd083/issues"
+
+[project.scripts]
+injectguard_jd083 = "injectguard_jd083:main"
+
+[tool.setuptools]
+py-modules = ["injectguard_jd083"]
